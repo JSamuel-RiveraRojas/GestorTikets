@@ -1,0 +1,47 @@
+C:\Users\Salem\OneDrive\Documentos\Colegio\Prof-emerson\C#\Ejercicio Conxion CRUD Encriptado\Modelos\bin\Debug\Modelos.dll
+C:\Users\Salem\OneDrive\Documentos\Colegio\Prof-emerson\C#\Ejercicio Conxion CRUD Encriptado\Modelos\bin\Debug\Modelos.pdb
+C:\Users\Salem\OneDrive\Documentos\Colegio\Prof-emerson\C#\Ejercicio Conxion CRUD Encriptado\Modelos\bin\Debug\System.Data.SqlClient.dll
+C:\Users\Salem\OneDrive\Documentos\Colegio\Prof-emerson\C#\Ejercicio Conxion CRUD Encriptado\Modelos\bin\Debug\System.Data.SqlClient.xml
+C:\Users\Salem\OneDrive\Documentos\Colegio\Prof-emerson\C#\Ejercicio Conxion CRUD Encriptado\Modelos\obj\Debug\Modelos.csproj.AssemblyReference.cache
+C:\Users\Salem\OneDrive\Documentos\Colegio\Prof-emerson\C#\Ejercicio Conxion CRUD Encriptado\Modelos\obj\Debug\Modelos.csproj.CoreCompileInputs.cache
+C:\Users\Salem\OneDrive\Documentos\Colegio\Prof-emerson\C#\Ejercicio Conxion CRUD Encriptado\Modelos\obj\Debug\Modelos.csproj.Up2Date
+C:\Users\Salem\OneDrive\Documentos\Colegio\Prof-emerson\C#\Ejercicio Conxion CRUD Encriptado\Modelos\obj\Debug\Modelos.dll
+C:\Users\Salem\OneDrive\Documentos\Colegio\Prof-emerson\C#\Ejercicio Conxion CRUD Encriptado\Modelos\obj\Debug\Modelos.pdb
+C:\Users\Leonardo\Desktop\Gestion de tickest\MiniPTC\Modelos\bin\Debug\Modelos.dll
+C:\Users\Leonardo\Desktop\Gestion de tickest\MiniPTC\Modelos\bin\Debug\Modelos.pdb
+C:\Users\Leonardo\Desktop\Gestion de tickest\MiniPTC\Modelos\bin\Debug\System.Data.SqlClient.dll
+C:\Users\Leonardo\Desktop\Gestion de tickest\MiniPTC\Modelos\bin\Debug\System.Data.SqlClient.xml
+C:\Users\Leonardo\Desktop\Gestion de tickest\MiniPTC\Modelos\obj\Debug\Modelos.csproj.AssemblyReference.cache
+C:\Users\Leonardo\Desktop\Gestion de tickest\MiniPTC\Modelos\obj\Debug\Modelos.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Desktop\Gestion de tickest\MiniPTC\Modelos\obj\Debug\Modelos.csproj.Up2Date
+C:\Users\Leonardo\Desktop\Gestion de tickest\MiniPTC\Modelos\obj\Debug\Modelos.dll
+C:\Users\Leonardo\Desktop\Gestion de tickest\MiniPTC\Modelos\obj\Debug\Modelos.pdb
+C:\Users\Leonardo\Desktop\Gestion de tickest\MiniPTC\Modelos\bin\Debug\BCrypt.Net-Next.dll
+C:\Users\Leonardo\Desktop\Gestion de tickest\MiniPTC\Modelos\bin\Debug\System.Buffers.dll
+C:\Users\Leonardo\Desktop\Gestion de tickest\MiniPTC\Modelos\bin\Debug\System.Memory.dll
+C:\Users\Leonardo\Desktop\Gestion de tickest\MiniPTC\Modelos\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Leonardo\Desktop\Gestion de tickest\MiniPTC\Modelos\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Leonardo\Desktop\Gestion de tickest\MiniPTC\Modelos\bin\Debug\BCrypt.Net-Next.xml
+C:\Users\Leonardo\Desktop\Gestion de tickest\MiniPTC\Modelos\bin\Debug\System.Buffers.xml
+C:\Users\Leonardo\Desktop\Gestion de tickest\MiniPTC\Modelos\bin\Debug\System.Memory.xml
+C:\Users\Leonardo\Desktop\Gestion de tickest\MiniPTC\Modelos\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Leonardo\Desktop\Gestion de tickest\MiniPTC\Modelos\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Salem\Desktop\Gestion de tickest\MiniPTC\Modelos\obj\Debug\Modelos.csproj.AssemblyReference.cache
+C:\Users\Salem\Desktop\Gestion de tickest\MiniPTC\Modelos\obj\Debug\Modelos.csproj.CoreCompileInputs.cache
+C:\Users\Salem\Desktop\Gestion de tickest\MiniPTC\Modelos\obj\Debug\Modelos.dll
+C:\Users\Salem\Desktop\Gestion de tickest\MiniPTC\Modelos\obj\Debug\Modelos.pdb
+C:\Users\Salem\Desktop\Gestion de tickest\MiniPTC\Modelos\bin\Debug\Modelos.dll
+C:\Users\Salem\Desktop\Gestion de tickest\MiniPTC\Modelos\bin\Debug\Modelos.pdb
+C:\Users\Salem\Desktop\Gestion de tickest\MiniPTC\Modelos\bin\Debug\BCrypt.Net-Next.dll
+C:\Users\Salem\Desktop\Gestion de tickest\MiniPTC\Modelos\bin\Debug\System.Buffers.dll
+C:\Users\Salem\Desktop\Gestion de tickest\MiniPTC\Modelos\bin\Debug\System.Data.SqlClient.dll
+C:\Users\Salem\Desktop\Gestion de tickest\MiniPTC\Modelos\bin\Debug\System.Memory.dll
+C:\Users\Salem\Desktop\Gestion de tickest\MiniPTC\Modelos\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Salem\Desktop\Gestion de tickest\MiniPTC\Modelos\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Salem\Desktop\Gestion de tickest\MiniPTC\Modelos\bin\Debug\BCrypt.Net-Next.xml
+C:\Users\Salem\Desktop\Gestion de tickest\MiniPTC\Modelos\bin\Debug\System.Buffers.xml
+C:\Users\Salem\Desktop\Gestion de tickest\MiniPTC\Modelos\bin\Debug\System.Data.SqlClient.xml
+C:\Users\Salem\Desktop\Gestion de tickest\MiniPTC\Modelos\bin\Debug\System.Memory.xml
+C:\Users\Salem\Desktop\Gestion de tickest\MiniPTC\Modelos\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Salem\Desktop\Gestion de tickest\MiniPTC\Modelos\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Salem\Desktop\Gestion de tickest\MiniPTC\Modelos\obj\Debug\Modelos.csproj.Up2Date
