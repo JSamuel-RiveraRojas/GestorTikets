@@ -1,149 +1,104 @@
-CREATE DATABASE TicketMiniPTC;
+CREATE DATABASE SistemaTicketsMiniPTC;
 GO
 
-USE TicketMiniPTC;
+USE SistemaTicketsMiniPTC;
 GO
 
--- Tablas
-CREATE TABLE Rol (
+
+create table Roles (
     idRol INT IDENTITY(1,1) PRIMARY KEY,
     nombreRol VARCHAR(25) NOT NULL UNIQUE
 );
 GO
+Insert into Roles Values ('Administrador'),('Técnico'),('Cliente')
+go
 
-CREATE TABLE Usuarios (
+
+
+cREATE TABLE Usuarios (
     idUsuario INT IDENTITY(1,1) PRIMARY KEY,
-    nombreUsuario VARCHAR(100) COLLATE SQL_Latin1_General_CP1_CS_AS UNIQUE NOT NULL, 
-    clave VARCHAR(100) COLLATE SQL_Latin1_General_CP1_CS_AS NOT NULL, 
-    estadoUsuario BIT NOT NULL DEFAULT 1,
-    id_Rol INT NOT NULL,
-    primerLogin BIT NOT NULL DEFAULT 1,
-    nombre NVARCHAR(100) NOT NULL,
-    apellido NVARCHAR(100) NOT NULL,
-    telefono NVARCHAR(20),
-    fechaCreacion DATETIME DEFAULT GETDATE(),
-    
-    CONSTRAINT FK_Usuarios_Rol FOREIGN KEY (id_Rol) REFERENCES Rol(idRol)
+    nombreUsuario NVARCHAR(100) COLLATE SQL_Latin1_General_CP1_CS_AS UNIQUE NOT NULL,
+    clave NVARCHAR(100) COLLATE SQL_Latin1_General_CP1_CS_AS NOT NULL,
+    idRol INT NOT NULL,
+    FOREIGN KEY (idRol) REFERENCES Roles(idRol)
 );
 GO
 
+
+create table Clientes (
+    idCliente INT PRIMARY KEY,
+    nombre NVARCHAR(100) NOT NULL,
+    apellido NVARCHAR(100) NOT NULL,
+    telefono NVARCHAR(20),
+    FOREIGN KEY (idCliente) REFERENCES Usuarios(idUsuario)
+);
+GO
+
+
+create table  Tecnicos (
+    idTecnico INT PRIMARY KEY,
+    nombre NVARCHAR(100) NOT NULL,
+    apellido NVARCHAR(100) NOT NULL,
+    telefono NVARCHAR(20),
+    especialidad NVARCHAR(100),
+    FOREIGN KEY (idTecnico) REFERENCES Usuarios(idUsuario)
+);
+GO
+
+
 CREATE TABLE Categorias (
     idCategoria INT IDENTITY(1,1) PRIMARY KEY,
-    nombre_Categoria NVARCHAR(100) NOT NULL,
+    nombreCategoria NVARCHAR(100) NOT NULL,
     descripcion NVARCHAR(500),
     activo BIT DEFAULT 1
 );
 GO
 
-CREATE TABLE Tickets (
+
+create table  Tickets (
     idTicket INT IDENTITY(1,1) PRIMARY KEY,
     titulo NVARCHAR(200) NOT NULL,
     descripcion NVARCHAR(MAX) NOT NULL,
-    clienteid INT NOT NULL,
-    idTecnico_Asignado INT NULL,
+    idCliente INT NOT NULL,
+    idTecnico INT NULL,
     idCategoria INT NOT NULL,
-    estado NVARCHAR(20) DEFAULT 'Abierto' 
-        CHECK (estado IN ('Abierto', 'En Progreso', 'En Espera', 'Resuelto', 'Cerrado')),
-    prioridad NVARCHAR(20) DEFAULT 'Media' 
-        CHECK (prioridad IN ('Baja', 'Media', 'Alta', 'Critica')),
-    fechacreacion DATETIME DEFAULT GETDATE(),
-    fechaactualizacion DATETIME DEFAULT GETDATE(),
-    fechacierre DATETIME NULL,
+    estado NVARCHAR(20) DEFAULT 'Abierto' CHECK (estado IN ('Abierto', 'En Progreso', 'En Espera', 'Resuelto', 'Cerrado')),
+    prioridad NVARCHAR(20) DEFAULT 'Media' CHECK (prioridad IN ('Baja', 'Media', 'Alta', 'Crítica')),
+    fechaCreacion DATETIME DEFAULT GETDATE(),
+    fechaActualizacion DATETIME DEFAULT GETDATE(),
+    fechaCierre DATETIME NULL,
     solucion NVARCHAR(MAX),
-    
-    CONSTRAINT FK_Tickets_Cliente FOREIGN KEY (clienteid) REFERENCES Usuarios(idUsuario),
-    CONSTRAINT FK_Tickets_Tecnico FOREIGN KEY (idTecnico_Asignado) REFERENCES Usuarios(idUsuario),
-    CONSTRAINT FK_Tickets_Categoria FOREIGN KEY (idCategoria) REFERENCES Categorias(idCategoria)
+    FOREIGN KEY (idCliente) REFERENCES Clientes(idCliente),
+    FOREIGN KEY (idTecnico) REFERENCES Tecnicos(idTecnico),
+    FOREIGN KEY (idCategoria) REFERENCES Categorias(idCategoria)
 );
 GO
 
--- Inserciones
-INSERT INTO Rol (nombreRol) VALUES 
-('Administrador'),
-('Tecnico'),
-('Cliente');
-GO
 
-INSERT INTO Categorias (nombre_Categoria, descripcion) VALUES
-('Hardware', 'Problemas relacionados con componentes físicos'),
-('Software', 'Problemas con aplicaciones y programas'),
-('Red', 'Problemas de conectividad y red'),
-('Sistema Operativo', 'Problemas con Windows, Linux, etc.'),
-('Base de Datos', 'Problemas con SQL Server, MySQL, etc.'),
-('Seguridad', 'Problemas de acceso y permisos');
-GO
+CREATE TABLE HistorialTicket (
+    idHistorial INT IDENTITY(1,1) PRIMARY KEY,
+    idTicket INT NOT NULL,
+    estadoAnterior NVARCHAR(20),
+    estadoNuevo NVARCHAR(20),
+    fechaCambio DATETIME DEFAULT GETDATE(),
+    comentario NVARCHAR(MAX),
+    FOREIGN KEY (idTicket) REFERENCES Tickets(idTicket)
+);
+GO 
 
-INSERT INTO Usuarios (nombreUsuario, clave, estadoUsuario, id_Rol, primerLogin, nombre, apellido) 
-VALUES 
-('Admin', 'Admin123', 1, 1, 1, 'Administrador', 'Principal'),
-('Tecnico1', 'Tecnico123', 1, 2, 1, 'Carlos', 'Rodríguez'),
-('Cliente1', 'Cliente123', 1, 3, 1, 'María', 'González');
-GO
+CREATE TABLE Acciones (
+    idAccion INT IDENTITY(1,1) PRIMARY KEY,
+    nombreAccion NVARCHAR(100) NOT NULL UNIQUE,
+    descripcion NVARCHAR(300)
+);
 
--- Vistas
-CREATE VIEW Vista_Usuarios_Completa AS
-SELECT 
-    u.idUsuario AS ID,
-    r.nombreRol AS Rol,
-    u.nombreUsuario AS Usuario,
-    u.nombre AS Nombre,
-    u.apellido AS Apellido,
-    u.telefono AS Telefono,
-    CASE 
-        WHEN u.estadoUsuario = 1 THEN 'ACTIVO' 
-        ELSE 'INACTIVO' 
-    END AS Estado,
-    u.fechaCreacion AS [Fecha Registro]
-FROM Usuarios u
-INNER JOIN Rol r ON u.id_Rol = r.idRol;
-GO
+CREATE TABLE RegistroActividades (
+    idActividad INT IDENTITY(1,1) PRIMARY KEY,
+    idUsuario INT NOT NULL,
+    idAccion INT NOT NULL,
+    detalle NVARCHAR(300), -- opcional para agregar contexto
+    fecha DATETIME DEFAULT GETDATE(),
+    FOREIGN KEY (idUsuario) REFERENCES Usuarios(idUsuario),
+    FOREIGN KEY (idAccion) REFERENCES Acciones(idAccion)
+);
 
-CREATE VIEW Vista_Tickets_Completa AS
-SELECT 
-    t.idTicket AS ID,
-    t.titulo AS Titulo,
-    t.descripcion AS Descripcion,
-    c.nombre + ' ' + c.apellido AS Cliente,
-    tec.nombre + ' ' + tec.apellido AS Tecnico,
-    cat.nombre_Categoria AS Categoria,
-    t.estado AS Estado,
-    t.prioridad AS Prioridad,
-    t.fechacreacion AS [Fecha Creacion],
-    t.fechaactualizacion AS [Ultima Actualizacion],
-    t.fechacierre AS [Fecha Cierre],
-    t.solucion AS Solucion
-FROM Tickets t
-INNER JOIN Usuarios c ON t.clienteid = c.idUsuario
-LEFT JOIN Usuarios tec ON t.idTecnico_Asignado = tec.idUsuario
-INNER JOIN Categorias cat ON t.idCategoria = cat.idCategoria;
-GO
-
-CREATE VIEW Vista_Tecnicos_Activos AS
-SELECT 
-    idUsuario AS ID,
-    nombreUsuario AS Usuario,
-    nombre + ' ' + apellido AS [Nombre Completo],
-    telefono AS Telefono
-FROM Usuarios 
-WHERE id_Rol = 2 AND estadoUsuario = 1;
-GO
-
-CREATE VIEW Vista_Clientes_Activos AS
-SELECT 
-    idUsuario AS ID,
-    nombreUsuario AS Usuario,
-    nombre + ' ' + apellido AS [Nombre Completo],
-    telefono AS Telefono
-FROM Usuarios 
-WHERE id_Rol = 3 AND estadoUsuario = 1;
-GO
-
--- Consultas de verificación
-SELECT * FROM Rol;
-SELECT * FROM Usuarios;
-SELECT * FROM Categorias;
-
-SELECT * FROM Vista_Usuarios_Completa;
-SELECT * FROM Vista_Tecnicos_Activos;
-SELECT * FROM Vista_Clientes_Activos;
-GO

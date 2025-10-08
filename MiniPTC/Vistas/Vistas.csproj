@@ -62,22 +62,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Formularios\Admin\FrmGestorCategorias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Admin\FrmGestorCategorias.Designer.cs">
+      <DependentUpon>FrmGestorCategorias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Admin\frmGestorCrearTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Admin\frmGestorCrearTicket.Designer.cs">
+      <DependentUpon>frmGestorCrearTicket.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\frmContenedor.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\frmContenedor.Designer.cs">
       <DependentUpon>frmContenedor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\frmGestorCrearTikets.cs">
+    <Compile Include="Formularios\Admin\FrmGestorTecnicos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\frmGestorCrearTikets.Designer.cs">
-      <DependentUpon>frmGestorCrearTikets.cs</DependentUpon>
+    <Compile Include="Formularios\Admin\FrmGestorTecnicos.Designer.cs">
+      <DependentUpon>FrmGestorTecnicos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\frmGestorUsuarios.cs">
+    <Compile Include="Formularios\Admin\frmGestorUsuarios.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\frmGestorUsuarios.Designer.cs">
+    <Compile Include="Formularios\Admin\frmGestorUsuarios.Designer.cs">
       <DependentUpon>frmGestorUsuarios.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\frmLogin.cs">
@@ -92,27 +104,21 @@
     <Compile Include="Formularios\frmDashBoard.Designer.cs">
       <DependentUpon>frmDashBoard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Popers\frmAgregarUsuario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\Popers\frmAgregarUsuario.Designer.cs">
-      <DependentUpon>frmAgregarUsuario.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\Popers\frmEditarUsuario.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Formularios\Popers\frmEditarUsuario.Designer.cs">
-      <DependentUpon>frmEditarUsuario.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formularios\Admin\FrmGestorCategorias.resx">
+      <DependentUpon>FrmGestorCategorias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Admin\FrmGestorTecnicos.resx">
+      <DependentUpon>FrmGestorTecnicos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Admin\frmGestorCrearTicket.resx">
+      <DependentUpon>frmGestorCrearTicket.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmContenedor.resx">
       <DependentUpon>frmContenedor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\frmGestorCrearTikets.resx">
-      <DependentUpon>frmGestorCrearTikets.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\frmGestorUsuarios.resx">
+    <EmbeddedResource Include="Formularios\Admin\frmGestorUsuarios.resx">
       <DependentUpon>frmGestorUsuarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmLogin.resx">
@@ -120,12 +126,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmDashBoard.resx">
       <DependentUpon>frmDashBoard.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Popers\frmAgregarUsuario.resx">
-      <DependentUpon>frmAgregarUsuario.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Popers\frmEditarUsuario.resx">
-      <DependentUpon>frmEditarUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

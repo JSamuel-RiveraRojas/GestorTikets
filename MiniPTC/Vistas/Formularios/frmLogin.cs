@@ -109,33 +109,41 @@ namespace Vistas.Formularios
 
         private void btnlogin_Click(object sender, EventArgs e)
         {
+            string usuario = txtuser.Text.Trim();
+            string clave = txtcontraseña.Text;
 
-            string nombreUsuario = txtuser.Text;
-            string contrasena = txtcontraseña.Text;
-
-           
-            bool esValido = Conexion.ValidarCredenciales(nombreUsuario, contrasena);
-
-            
-            if (esValido)
+            if (string.IsNullOrEmpty(usuario) || string.IsNullOrEmpty(clave))
             {
-         
-                MessageBox.Show("¡Inicio de sesión exitoso!", "Bienvenido", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Debe ingresar usuario y contraseña", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
-       
-                frmContenedor formularioContenedor = new frmContenedor();
+            Usuario usuarioLogueado = Usuario.ValidarLogin(usuario, clave);
 
-                
-                formularioContenedor.Show();
+            if (usuarioLogueado != null)
+            {
+                MessageBox.Show("Inicio de sesión exitoso", "Bienvenido", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                
+                // Redirigir según el rol
+                switch (usuarioLogueado.IdRol)
+                {
+                    case 1: // Administrador
+                        new frmContenedor("Administrador", usuarioLogueado).Show();
+                        break;
+                    case 2: // Técnico
+                        new frmContenedor("Técnico", usuarioLogueado).Show();
+                        break;
+                    case 3: // Cliente
+                        new frmContenedor("Cliente", usuarioLogueado).Show();
+                        break;
+                }
+
                 this.Hide();
             }
             else
             {
-                MessageBox.Show("Credenciales incorrectas. Inténtelo de nuevo.", "Error de Autenticación", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Usuario o contraseña incorrectos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -147,6 +155,14 @@ namespace Vistas.Formularios
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void txtcontraseña_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                btnlogin.PerformClick();
+            }
         }
     }
 }

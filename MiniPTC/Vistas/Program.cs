@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Modelos.Entidades;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -17,7 +18,16 @@ namespace Vistas
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmLogin());
+            if (!Usuario.ExisteAdministrador())
+            {
+                //message boxcque no existe admin
+                MessageBox.Show("No existe un usuario administrador. Por favor, cree uno antes de usar el programa.");
+                Application.Run(new frmGestorUsuarios());
+            }
+            else
+            {
+                Application.Run(new frmLogin());
+            }
         }
     }
 }

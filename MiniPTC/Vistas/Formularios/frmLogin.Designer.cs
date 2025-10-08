@@ -107,6 +107,7 @@
             this.txtcontraseña.TabIndex = 2;
             this.txtcontraseña.Text = "CONTRASEÑA";
             this.txtcontraseña.Enter += new System.EventHandler(this.txtcontraseña_Enter);
+            this.txtcontraseña.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtcontraseña_KeyPress);
             this.txtcontraseña.Leave += new System.EventHandler(this.txtcontraseña_Leave);
             // 
             // panel3

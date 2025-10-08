@@ -1,58 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Salem\\Desktop\\Gestion de tickest\\MiniPTC\\",
+  "WorkspaceRootPath": "C:\\Users\\guzma\\Desktop\\GestorTikets-master\\GestorTikets-master\\MiniPTC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{37EFE04F-48F2-4767-AE77-0E53D4A7B114}|Vistas\\Vistas.csproj|C:\\Users\\Salem\\Desktop\\Gestion de tickest\\MiniPTC\\vistas\\formularios\\popers\\frmagregarusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37EFE04F-48F2-4767-AE77-0E53D4A7B114}|Vistas\\Vistas.csproj|solutionrelative:vistas\\formularios\\popers\\frmagregarusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0213EC54-FBD3-4A24-B96B-C9920787C782}|Modelos\\Modelos.csproj|C:\\Users\\Salem\\Desktop\\Gestion de tickest\\MiniPTC\\modelos\\entidades\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0213EC54-FBD3-4A24-B96B-C9920787C782}|Modelos\\Modelos.csproj|solutionrelative:modelos\\entidades\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37EFE04F-48F2-4767-AE77-0E53D4A7B114}|Vistas\\Vistas.csproj|C:\\Users\\Salem\\Desktop\\Gestion de tickest\\MiniPTC\\vistas\\formularios\\popers\\frmagregarusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{37EFE04F-48F2-4767-AE77-0E53D4A7B114}|Vistas\\Vistas.csproj|solutionrelative:vistas\\formularios\\popers\\frmagregarusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37EFE04F-48F2-4767-AE77-0E53D4A7B114}|Vistas\\Vistas.csproj|C:\\Users\\Salem\\Desktop\\Gestion de tickest\\MiniPTC\\vistas\\formularios\\frmdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{37EFE04F-48F2-4767-AE77-0E53D4A7B114}|Vistas\\Vistas.csproj|solutionrelative:vistas\\formularios\\frmdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0213EC54-FBD3-4A24-B96B-C9920787C782}|Modelos\\Modelos.csproj|C:\\Users\\Salem\\Desktop\\Gestion de tickest\\MiniPTC\\modelos\\entidades\\rol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0213EC54-FBD3-4A24-B96B-C9920787C782}|Modelos\\Modelos.csproj|solutionrelative:modelos\\entidades\\rol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37EFE04F-48F2-4767-AE77-0E53D4A7B114}|Vistas\\Vistas.csproj|C:\\Users\\Salem\\Desktop\\Gestion de tickest\\MiniPTC\\vistas\\formularios\\frmgestorcreartikets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37EFE04F-48F2-4767-AE77-0E53D4A7B114}|Vistas\\Vistas.csproj|solutionrelative:vistas\\formularios\\frmgestorcreartikets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37EFE04F-48F2-4767-AE77-0E53D4A7B114}|Vistas\\Vistas.csproj|C:\\Users\\Salem\\Desktop\\Gestion de tickest\\MiniPTC\\vistas\\formularios\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{37EFE04F-48F2-4767-AE77-0E53D4A7B114}|Vistas\\Vistas.csproj|solutionrelative:vistas\\formularios\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0213EC54-FBD3-4A24-B96B-C9920787C782}|Modelos\\Modelos.csproj|C:\\Users\\Salem\\Desktop\\Gestion de tickest\\MiniPTC\\modelos\\entidades\\tickets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0213EC54-FBD3-4A24-B96B-C9920787C782}|Modelos\\Modelos.csproj|solutionrelative:modelos\\entidades\\tickets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37EFE04F-48F2-4767-AE77-0E53D4A7B114}|Vistas\\Vistas.csproj|C:\\Users\\Salem\\Desktop\\Gestion de tickest\\MiniPTC\\vistas\\formularios\\frmgestorusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37EFE04F-48F2-4767-AE77-0E53D4A7B114}|Vistas\\Vistas.csproj|solutionrelative:vistas\\formularios\\frmgestorusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37EFE04F-48F2-4767-AE77-0E53D4A7B114}|Vistas\\Vistas.csproj|C:\\Users\\Salem\\Desktop\\Gestion de tickest\\MiniPTC\\vistas\\formularios\\frmgestorusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{37EFE04F-48F2-4767-AE77-0E53D4A7B114}|Vistas\\Vistas.csproj|solutionrelative:vistas\\formularios\\frmgestorusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37EFE04F-48F2-4767-AE77-0E53D4A7B114}|Vistas\\Vistas.csproj|C:\\Users\\Salem\\Desktop\\Gestion de tickest\\MiniPTC\\vistas\\formularios\\frmcontenedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{37EFE04F-48F2-4767-AE77-0E53D4A7B114}|Vistas\\Vistas.csproj|c:\\users\\guzma\\desktop\\gestortikets-master\\gestortikets-master\\miniptc\\vistas\\formularios\\frmcontenedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{37EFE04F-48F2-4767-AE77-0E53D4A7B114}|Vistas\\Vistas.csproj|solutionrelative:vistas\\formularios\\frmcontenedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37EFE04F-48F2-4767-AE77-0E53D4A7B114}|Vistas\\Vistas.csproj|C:\\Users\\Salem\\Desktop\\Gestion de tickest\\MiniPTC\\vistas\\formularios\\frmgestorcreartikets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{37EFE04F-48F2-4767-AE77-0E53D4A7B114}|Vistas\\Vistas.csproj|solutionrelative:vistas\\formularios\\frmgestorcreartikets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{37EFE04F-48F2-4767-AE77-0E53D4A7B114}|Vistas\\Vistas.csproj|c:\\users\\guzma\\desktop\\gestortikets-master\\gestortikets-master\\miniptc\\vistas\\formularios\\admin\\frmgestorcategorias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{37EFE04F-48F2-4767-AE77-0E53D4A7B114}|Vistas\\Vistas.csproj|solutionrelative:vistas\\formularios\\admin\\frmgestorcategorias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0213EC54-FBD3-4A24-B96B-C9920787C782}|Modelos\\Modelos.csproj|C:\\Users\\Salem\\Desktop\\Gestion de tickest\\MiniPTC\\modelos\\entidades\\sesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0213EC54-FBD3-4A24-B96B-C9920787C782}|Modelos\\Modelos.csproj|solutionrelative:modelos\\entidades\\sesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{37EFE04F-48F2-4767-AE77-0E53D4A7B114}|Vistas\\Vistas.csproj|c:\\users\\guzma\\desktop\\gestortikets-master\\gestortikets-master\\miniptc\\vistas\\formularios\\admin\\frmgestorcrearticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{37EFE04F-48F2-4767-AE77-0E53D4A7B114}|Vistas\\Vistas.csproj|solutionrelative:vistas\\formularios\\admin\\frmgestorcrearticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0213EC54-FBD3-4A24-B96B-C9920787C782}|Modelos\\Modelos.csproj|c:\\users\\guzma\\desktop\\gestortikets-master\\gestortikets-master\\miniptc\\modelos\\entidades\\tickets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0213EC54-FBD3-4A24-B96B-C9920787C782}|Modelos\\Modelos.csproj|solutionrelative:modelos\\entidades\\tickets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37EFE04F-48F2-4767-AE77-0E53D4A7B114}|Vistas\\Vistas.csproj|c:\\users\\guzma\\desktop\\gestortikets-master\\gestortikets-master\\miniptc\\vistas\\formularios\\frmcontenedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37EFE04F-48F2-4767-AE77-0E53D4A7B114}|Vistas\\Vistas.csproj|solutionrelative:vistas\\formularios\\frmcontenedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -65,170 +33,70 @@
           "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Usuario.cs",
-              "DocumentMoniker": "C:\\Users\\Salem\\Desktop\\Gestion de tickest\\MiniPTC\\Modelos\\Entidades\\Usuario.cs",
-              "RelativeDocumentMoniker": "Modelos\\Entidades\\Usuario.cs",
-              "ToolTip": "C:\\Users\\Salem\\Desktop\\Gestion de tickest\\MiniPTC\\Modelos\\Entidades\\Usuario.cs*",
-              "RelativeToolTip": "Modelos\\Entidades\\Usuario.cs*",
-              "ViewState": "AgIAAIIAAAAAAAAAAAAqwKEAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-06T21:09:52.524Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "frmAgregarUsuario.cs",
-              "DocumentMoniker": "C:\\Users\\Salem\\Desktop\\Gestion de tickest\\MiniPTC\\Vistas\\Formularios\\Popers\\frmAgregarUsuario.cs",
-              "RelativeDocumentMoniker": "Vistas\\Formularios\\Popers\\frmAgregarUsuario.cs",
-              "ToolTip": "C:\\Users\\Salem\\Desktop\\Gestion de tickest\\MiniPTC\\Vistas\\Formularios\\Popers\\frmAgregarUsuario.cs*",
-              "RelativeToolTip": "Vistas\\Formularios\\Popers\\frmAgregarUsuario.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAH8AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-07T12:38:39.369Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "frmAgregarUsuario.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Salem\\Desktop\\Gestion de tickest\\MiniPTC\\Vistas\\Formularios\\Popers\\frmAgregarUsuario.cs",
-              "RelativeDocumentMoniker": "Vistas\\Formularios\\Popers\\frmAgregarUsuario.cs",
-              "ToolTip": "C:\\Users\\Salem\\Desktop\\Gestion de tickest\\MiniPTC\\Vistas\\Formularios\\Popers\\frmAgregarUsuario.cs [Dise\u00F1o]*",
-              "RelativeToolTip": "Vistas\\Formularios\\Popers\\frmAgregarUsuario.cs [Dise\u00F1o]*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-07T12:38:37.901Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "frmContenedor.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Salem\\Desktop\\Gestion de tickest\\MiniPTC\\Vistas\\Formularios\\frmContenedor.cs",
-              "RelativeDocumentMoniker": "Vistas\\Formularios\\frmContenedor.cs",
-              "ToolTip": "C:\\Users\\Salem\\Desktop\\Gestion de tickest\\MiniPTC\\Vistas\\Formularios\\frmContenedor.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Vistas\\Formularios\\frmContenedor.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-07T04:39:50.362Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Sesion.cs",
-              "DocumentMoniker": "C:\\Users\\Salem\\Desktop\\Gestion de tickest\\MiniPTC\\Modelos\\Entidades\\Sesion.cs",
-              "RelativeDocumentMoniker": "Modelos\\Entidades\\Sesion.cs",
-              "ToolTip": "C:\\Users\\Salem\\Desktop\\Gestion de tickest\\MiniPTC\\Modelos\\Entidades\\Sesion.cs",
-              "RelativeToolTip": "Modelos\\Entidades\\Sesion.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-06T06:26:38.101Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "frmDashBoard.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Salem\\Desktop\\Gestion de tickest\\MiniPTC\\Vistas\\Formularios\\frmDashBoard.cs",
-              "RelativeDocumentMoniker": "Vistas\\Formularios\\frmDashBoard.cs",
-              "ToolTip": "C:\\Users\\Salem\\Desktop\\Gestion de tickest\\MiniPTC\\Vistas\\Formularios\\frmDashBoard.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Vistas\\Formularios\\frmDashBoard.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-06T22:44:06.402Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "frmGestorCrearTikets.cs",
-              "DocumentMoniker": "C:\\Users\\Salem\\Desktop\\Gestion de tickest\\MiniPTC\\Vistas\\Formularios\\frmGestorCrearTikets.cs",
-              "RelativeDocumentMoniker": "Vistas\\Formularios\\frmGestorCrearTikets.cs",
-              "ToolTip": "C:\\Users\\Salem\\Desktop\\Gestion de tickest\\MiniPTC\\Vistas\\Formularios\\frmGestorCrearTikets.cs",
-              "RelativeToolTip": "Vistas\\Formularios\\frmGestorCrearTikets.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAtwAsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-06T22:43:02.73Z",
-              "EditorCaption": ""
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Rol.cs",
-              "DocumentMoniker": "C:\\Users\\Salem\\Desktop\\Gestion de tickest\\MiniPTC\\Modelos\\Entidades\\Rol.cs",
-              "RelativeDocumentMoniker": "Modelos\\Entidades\\Rol.cs",
-              "ToolTip": "C:\\Users\\Salem\\Desktop\\Gestion de tickest\\MiniPTC\\Modelos\\Entidades\\Rol.cs",
-              "RelativeToolTip": "Modelos\\Entidades\\Rol.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Title": "frmContenedor.cs",
+              "DocumentMoniker": "C:\\Users\\guzma\\Desktop\\GestorTikets-master\\GestorTikets-master\\MiniPTC\\Vistas\\Formularios\\frmContenedor.cs",
+              "RelativeDocumentMoniker": "Vistas\\Formularios\\frmContenedor.cs",
+              "ToolTip": "C:\\Users\\guzma\\Desktop\\GestorTikets-master\\GestorTikets-master\\MiniPTC\\Vistas\\Formularios\\frmContenedor.cs",
+              "RelativeToolTip": "Vistas\\Formularios\\frmContenedor.cs",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAnwIEAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-06T21:07:15.757Z",
+              "WhenOpened": "2025-10-08T18:05:27.973Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "frmLogin.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Salem\\Desktop\\Gestion de tickest\\MiniPTC\\Vistas\\Formularios\\frmLogin.cs",
-              "RelativeDocumentMoniker": "Vistas\\Formularios\\frmLogin.cs",
-              "ToolTip": "C:\\Users\\Salem\\Desktop\\Gestion de tickest\\MiniPTC\\Vistas\\Formularios\\frmLogin.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Vistas\\Formularios\\frmLogin.cs [Dise\u00F1o]",
+              "DocumentIndex": 0,
+              "Title": "frmContenedor.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\guzma\\Desktop\\GestorTikets-master\\GestorTikets-master\\MiniPTC\\Vistas\\Formularios\\frmContenedor.cs",
+              "RelativeDocumentMoniker": "Vistas\\Formularios\\frmContenedor.cs",
+              "ToolTip": "C:\\Users\\guzma\\Desktop\\GestorTikets-master\\GestorTikets-master\\MiniPTC\\Vistas\\Formularios\\frmContenedor.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Vistas\\Formularios\\frmContenedor.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T23:54:43.002Z",
+              "WhenOpened": "2025-10-08T17:34:41.469Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "frmGestorUsuarios.cs",
-              "DocumentMoniker": "C:\\Users\\Salem\\Desktop\\Gestion de tickest\\MiniPTC\\Vistas\\Formularios\\frmGestorUsuarios.cs",
-              "RelativeDocumentMoniker": "Vistas\\Formularios\\frmGestorUsuarios.cs",
-              "ToolTip": "C:\\Users\\Salem\\Desktop\\Gestion de tickest\\MiniPTC\\Vistas\\Formularios\\frmGestorUsuarios.cs",
-              "RelativeToolTip": "Vistas\\Formularios\\frmGestorUsuarios.cs",
-              "ViewState": "AgIAAEwAAAAAAAAAAADwv2EAAAAXAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "FrmGestorCategorias.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\guzma\\Desktop\\GestorTikets-master\\GestorTikets-master\\MiniPTC\\Vistas\\Formularios\\Admin\\FrmGestorCategorias.cs",
+              "RelativeDocumentMoniker": "Vistas\\Formularios\\Admin\\FrmGestorCategorias.cs",
+              "ToolTip": "C:\\Users\\guzma\\Desktop\\GestorTikets-master\\GestorTikets-master\\MiniPTC\\Vistas\\Formularios\\Admin\\FrmGestorCategorias.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Vistas\\Formularios\\Admin\\FrmGestorCategorias.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-06T07:28:48.049Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-08T17:21:59.449Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
+              "Title": "frmGestorCrearTicket.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\guzma\\Desktop\\GestorTikets-master\\GestorTikets-master\\MiniPTC\\Vistas\\Formularios\\Admin\\frmGestorCrearTicket.cs",
+              "RelativeDocumentMoniker": "Vistas\\Formularios\\Admin\\frmGestorCrearTicket.cs",
+              "ToolTip": "C:\\Users\\guzma\\Desktop\\GestorTikets-master\\GestorTikets-master\\MiniPTC\\Vistas\\Formularios\\Admin\\frmGestorCrearTicket.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Vistas\\Formularios\\Admin\\frmGestorCrearTicket.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-08T17:21:52.849Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Tickets.cs",
-              "DocumentMoniker": "C:\\Users\\Salem\\Desktop\\Gestion de tickest\\MiniPTC\\Modelos\\Entidades\\Tickets.cs",
+              "DocumentMoniker": "C:\\Users\\guzma\\Desktop\\GestorTikets-master\\GestorTikets-master\\MiniPTC\\Modelos\\Entidades\\Tickets.cs",
               "RelativeDocumentMoniker": "Modelos\\Entidades\\Tickets.cs",
-              "ToolTip": "C:\\Users\\Salem\\Desktop\\Gestion de tickest\\MiniPTC\\Modelos\\Entidades\\Tickets.cs",
+              "ToolTip": "C:\\Users\\guzma\\Desktop\\GestorTikets-master\\GestorTikets-master\\MiniPTC\\Modelos\\Entidades\\Tickets.cs",
               "RelativeToolTip": "Modelos\\Entidades\\Tickets.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-06T06:26:42.836Z",
+              "WhenOpened": "2025-10-08T17:17:57.693Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "frmGestorCrearTikets.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Salem\\Desktop\\Gestion de tickest\\MiniPTC\\Vistas\\Formularios\\frmGestorCrearTikets.cs",
-              "RelativeDocumentMoniker": "Vistas\\Formularios\\frmGestorCrearTikets.cs",
-              "ToolTip": "C:\\Users\\Salem\\Desktop\\Gestion de tickest\\MiniPTC\\Vistas\\Formularios\\frmGestorCrearTikets.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Vistas\\Formularios\\frmGestorCrearTikets.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-06T06:10:57.217Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "frmGestorUsuarios.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Salem\\Desktop\\Gestion de tickest\\MiniPTC\\Vistas\\Formularios\\frmGestorUsuarios.cs",
-              "RelativeDocumentMoniker": "Vistas\\Formularios\\frmGestorUsuarios.cs",
-              "ToolTip": "C:\\Users\\Salem\\Desktop\\Gestion de tickest\\MiniPTC\\Vistas\\Formularios\\frmGestorUsuarios.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Vistas\\Formularios\\frmGestorUsuarios.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-06T06:04:53.689Z",
-              "EditorCaption": " [Dise\u00F1o]"
             }
           ]
         }

@@ -9,19 +9,19 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Vistas.Formularios.Admin;
 
 namespace Vistas.Formularios
 {
     public partial class frmContenedor : Form
     {
-        public frmContenedor()
+        private Usuario usuarioActual;
+        public frmContenedor(string rol, Usuario usuario)
         {
             InitializeComponent();
-
-            //if (Sesion.UsuarioActivo?.IdRol == 2) 
-            //{
-            //    btnGestionEmpleados.Visible = false;
-            //}
+            usuarioActual = usuario;
+            lblRol.Text = rol;
+            lblUsuario.Text = usuario.NombreUsuario;
 
             this.IsMdiContainer = true;
         }
@@ -29,7 +29,9 @@ namespace Vistas.Formularios
 
         private frmDashBoard dashBoardFROM;
         private frmGestorUsuarios UsuariosFROM;
-        private frmGestorCrearTikets CrearTiketsFROM;
+        private FrmGestorTecnicos tecnicoForm;
+        private FrmGestorCategorias categoriaForm;
+
 
 
         [DllImport("user32.Dll", EntryPoint = "ReleaseCapture")]
@@ -40,17 +42,9 @@ namespace Vistas.Formularios
 
         #region "Métodos para mostrar formularios"
 
-        private void MostrarFormularioEnPanel<T>(ref T form) where T : Form, new()
+        private void MostrarFormularioEnPanel(Form form)
         {
-            if (form != null && !form.IsDisposed)
-            {
-                form.Close();
-                form.Dispose();
-            }
-
             pnlContenedor.Controls.Clear();
-
-            form = new T();
 
             form.TopLevel = false;
             form.FormBorderStyle = FormBorderStyle.None;
@@ -114,27 +108,49 @@ namespace Vistas.Formularios
                 MessageBoxIcon.Question
             );
 
-            //if (resultado == DialogResult.Yes)
-            //{
-            //    if (Sesion.UsuarioActivo != null)
-            //    {
-            //        Sesion.Cerrar();
-            //    }
 
             frmLogin login = new frmLogin();
             login.Show();
             login.FormClosed += (s, args) => this.Close();
             this.Hide();
-            //}
         }
 
         #region "Eventos de Formulario"
 
         private void frmContenedor_Load(object sender, EventArgs e)
         {
-            MostrarFormularioEnPanel(ref dashBoardFROM);
-
+            frmDashBoard dashBoardForm = new frmDashBoard();
+            MostrarFormularioEnPanel(dashBoardForm);
             this.WindowState = FormWindowState.Maximized;
+
+            // Ajustar visibilidad de botones según el rol del usuario
+            if (lblRol.Text == "Administrador")
+            {
+                btnGestroUsuarios.Visible = true;
+                btnTecnicos.Visible = true;
+                btnCategoria.Visible = true;
+                btnCrearTikets.Visible = false;
+                btinTikets.Visible = false;
+            }
+            else if (lblRol.Text == "Técnico")
+            {
+                btnCategoria.Visible = false;
+                btnGestroUsuarios.Visible = false;
+                btnTecnicos.Visible = false;
+                btinTikets.Visible = false;
+                btnCrearTikets.Visible = false;
+            }
+            else if (lblRol.Text == "Cliente")
+            {
+                btnCategoria.Visible = false;
+                btnGestroUsuarios.Visible = false;
+                btnTecnicos.Visible = false;
+                btnCrearTikets.Visible = true;
+                btinTikets.Visible = true;
+
+            }   
+
+
         }
 
         private void FormPrincipal_Load(object sender, System.EventArgs e)
@@ -145,22 +161,14 @@ namespace Vistas.Formularios
         #endregion
 
 
-        private void button1_Click(object sender, EventArgs e)//btnInicio
 
-        {
-
-            MostrarFormularioEnPanel(ref dashBoardFROM);
-        }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            // Tu código existente
+            
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-           MostrarFormularioEnPanel(ref CrearTiketsFROM);
-        }
+
 
 
 
@@ -172,12 +180,36 @@ namespace Vistas.Formularios
 
         private void btnCrearTikets_Click(object sender, EventArgs e)
         {
-        
+            frmGestorCrearTicket crearForm = new frmGestorCrearTicket(usuarioActual);
+            MostrarFormularioEnPanel(crearForm);
         }
 
-        private void btnGestroUsuarios_Click(object sender, EventArgs e)
+        private void btnGestorUsuarios_Click(object sender, EventArgs e)
         {
-            MostrarFormularioEnPanel(ref UsuariosFROM);
+            frmGestorUsuarios usuariosForm = new frmGestorUsuarios();
+            MostrarFormularioEnPanel(usuariosForm);
+        }
+
+        private void btnTecnicos_Click(object sender, EventArgs e)
+        {
+            FrmGestorTecnicos tecnicoForm = new FrmGestorTecnicos();
+            MostrarFormularioEnPanel(tecnicoForm);
+        }
+
+        private void btnCategoria_Click(object sender, EventArgs e)
+        {
+            FrmGestorCategorias categoriaForm = new FrmGestorCategorias();
+            MostrarFormularioEnPanel(categoriaForm);
+        }
+
+        private void pnlContenedor_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnCrearTikets_ChangeUICues(object sender, UICuesEventArgs e)
+        {
+
         }
     }
     

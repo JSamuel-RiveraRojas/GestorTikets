@@ -1,6 +1,7 @@
-﻿using System.Data;
+﻿using Modelos.ConexionDB;
+using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
-using Modelos.ConexionDB;
 
 namespace Modelos.Entidades
 {
@@ -13,14 +14,25 @@ namespace Modelos.Entidades
         public int IdRol { get => idRol; set => idRol = value; }
         public string NombreRol { get => nombreRol; set => nombreRol = value; }
 
-        public static DataTable CargarRol()
+        //roles para el combobox de usuarios
+        public static List<Rol> ObtenerRoles()
         {
-            SqlConnection conexion =Conexion.conectar();
-            string consultaQuery = "select idRol, nombreRol from Rol;";
-            SqlDataAdapter add = new SqlDataAdapter(consultaQuery, conexion);
-            DataTable virtualTable = new DataTable();
-            add.Fill(virtualTable);
-            return virtualTable;
+            List<Rol> lista = new List<Rol>();
+            using (SqlConnection con = Conexion.conectar())
+            {
+                string query = "SELECT idRol, nombreRol FROM Roles";
+                SqlCommand cmd = new SqlCommand(query, con);
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    lista.Add(new Rol
+                    {
+                        IdRol = reader.GetInt32(0),
+                        NombreRol = reader.GetString(1)
+                    });
+                }
+            }
+            return lista;
         }
 
 
